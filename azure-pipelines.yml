@@ -17,13 +17,13 @@ steps:
 - task: PublishBuildArtifacts@1
   displayName: 'Publish Artifact: drop'
 
-- task: "uipath.vsts-uipath-package.uipath-deploy.UiPathDeploy@2"
-  displayName: 'UiPath Deploy'
-   inputs:
+- task: "uipath.vsts-uipath-package.uipath-deploy.UiPathDeploy@2"  
+  inputs:
     orchestratorConnection: UiPathOrchConnection
     packagesPath: '$(Build.ArtifactStagingDirectory)'
     folderName: default
     environments: Dev
+  displayName: 'UiPath Deploy'
 
 - task: "PowerShell@2"
   inputs:
