@@ -30,7 +30,7 @@ steps:
     targetType: "filePath"
     filePath: C:\agent\Workflow-Analyzer-CLI-Script-1.4.1\src\Workflow-Analyzer-CLI-Script.ps1
     arguments: > # Use this to avoid newline characters in multiline string
-                -ProjectFilePath $(Build.SourcesDirectory)\project.json
+                -ProjectFilePath $(Build.SourcesDirectory)\helloWorld\project.json
                 -ExecutableFilePath "C:\Users\geetanjali.r.gawade\AppData\Local\UiPath\app-21.4.4\UiPath.Studio.CommandLine.exe"
                 -OutputFilePath '$(Pipeline.Workspace)\drop\Workflow-Analysis.json'
     workingDirectory: $(Build.SourcesDirectory)
