@@ -19,8 +19,8 @@ steps:
 
 - task: "uipath.vsts-uipath-package.uipath-deploy.UiPathDeploy@2"
   displayName: 'UiPath Deploy'
-  inputs:
-    orchestratorConnection: '$(Parameters.orchestratorConnection)'
+   inputs:
+    orchestratorConnection: UiPathOrchConnection
     packagesPath: '$(Build.ArtifactStagingDirectory)'
     folderName: default
     environments: Dev
