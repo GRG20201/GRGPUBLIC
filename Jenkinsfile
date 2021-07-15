@@ -53,7 +53,7 @@ pipeline {
 	
 
 	         // Deploy Stages
-	        stage('Deploy to UAT') {
+	        stage('Deploy to UAT 1 ') {
 	            steps {
 	                echo "Deploying ${BRANCH_NAME} to UAT "
 	                UiPathDeploy (
